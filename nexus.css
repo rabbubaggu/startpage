@@ -1,0 +1,76 @@
+/* center page */
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "MS PGothic", Arial, sans-serif;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* list styling */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 5px;
+  text-align: center;
+}
+
+nav ul li h1 {
+  font-size: 1em;
+  grid-column: 1 / -1;
+  margin: 0;
+  font-weight: bolder;
+}
+
+nav ul li a {
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, font-size 0.15s ease-in-out;
+}
+
+nav ul li a:focus,
+nav ul li a:hover {
+  color: grey;
+  font-size: 1.15em;
+}
+
+/* search bar styling */
+nav form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border: none;
+}
+
+nav form input[type="search"] {
+  width: 100%;
+  border: 1px;
+  padding: 0.5em 0.5em;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font: inherit;
+  color: grey;
+  background-color: transparent;
+}
